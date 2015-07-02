@@ -51,8 +51,8 @@ namespace NUnitLiteForUnity
 			Log.SetLogger(_testLogger);
 
 
-#if UNITY_STANDALONE_WIN
-			SQLitePCL.SQLite3Provider.SetDllDirectory(Application.dataPath);
+#if UNITY_STANDALONE_WIN && !UNITY_EDITOR
+			SQLitePCL.SQLite3Provider.SetDllDirectory(Application.persistentDataPath);
 #endif
 
 			Log.I ("TestRunnerBehaviour", Application.persistentDataPath);
