@@ -1,0 +1,8 @@
+*.csproj
+*.sln
+Assets/Plugins/
+Library/
+Temp/
+*.unityproj
+*.userprefs
+*.meta
